@@ -1,6 +1,7 @@
 import streamlit as st # type: ignore
 import pickle 
 import numpy as np # type: ignore
+import os
 
 def load_model():
     with open('saved_steps.pkl', 'rb') as file:
