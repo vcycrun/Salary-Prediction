@@ -58,10 +58,10 @@ def show_explore_page():
     data = df["Country"].value_counts()
 
     fig1, ax1 = plt.subplots()
-    # fig1.patch.set_facecolor('none')
-    # ax1.set_facecolor('none') 
+    fig1.patch.set_facecolor('none')
+    ax1.set_facecolor('none') 
     colors = ['#cfe2f3', '#f4cccc', '#d9ead3', '#fff2cc', '#d0e0e3', '#cfe2f3', '#f9cb9c']
-    ax1.pie(data, labels=data.index, autopct='%1.1f%%', shadow=True, startangle=90, labeldistance=1.1, pctdistance=0.85)
+    ax1.pie(data, autopct='%1.1f%%', shadow=True, startangle=90, labeldistance=1.1, pctdistance=0.85)
     # centre_circle = plt.Circle((0,0),0.70,fc='none')
     # fig1.gca().add_artist(centre_circle)
     ax1.axis('equal')
